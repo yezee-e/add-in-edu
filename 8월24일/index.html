@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .blue {
+        color: blue;
+      }
+      .red {
+        color: red;
+      }
+    </style>
+    <script>
+      /*
+        var a = 10;
+        var b = 3;
+        var result = '';
+        if (a > b) {
+          result = 'javascript ';
+        } else {
+          result = 'hello';
+        }
+        document.write(result);
+        */
+
+      /* 적정체중구하기
+        const height = prompt('당신의 키는 몇입니까', '0');
+
+        if (height > '0') {
+          document.write(`적정 체중은 ${(height - 100) * 0.9} 입니다`);
+        }
+        */
+
+      /* 적정체중2
+        var name = prompt('당신의 이름은?', '');
+        var height = prompt('당신의 신장은?', '0');
+        var weight = prompt('당신의 몸무게는?', '0');
+        var normal = (height - 100) * 0.9;
+        var result = weight >= normal - 5 && weight <= normal + 5;
+        result = result ? '적정체중입니다' : '적정체중이 아닙니다';
+        document.write(`${name}님은 ${result}`);
+        */
+
+      /* 계절 나타내기
+        var mon = prompt('현재는 몇 월입니까?', '0');
+        if (mon >= 9 && mon <= 11) {
+          document.write('독서의 계절 가을이네요!');
+        } else if (mon >= 6 && mon <= 8) {
+          document.write('여행가기 좋은 여름이네요!');
+        } else if (mon >= 3 && mon <= 5) {
+          document.write('햇살가득한 봄이네요!');
+        } else if (mon == 12 || mon == 1 || mon == 2) {
+          document.write('스키의 계절 겨울이네요!');
+        } else {
+          document.write('1에서 12숫자를 넣어주세요');
+        }
+        */
+
+      /*아이디와 비번 일치확인하기
+        let id = 'hello';
+        let pw = 123;
+
+        let userId = prompt('아이디는?', '');
+        let userPw = prompt('비밀번호는?', '');
+        if (id == userId && pw == userPw) {
+          document.write(`${userId}님 반갑습니다`);
+        } else {
+          document.write('비밀번호와 아이디가 일치하지 않습니다');
+          location.reload(); //브라우저 새로고침
+        }
+        */
+
+      /*switch문 연습
+      let site = prompt(
+        '네이버, 다음, 구글 중 즐겨 사용하는 포털 검색 사이트는?',
+        ''
+      );
+
+      let url;
+      switch (site) {
+        case '구글':
+          url = 'www.google.com';
+          break;
+        case '다음':
+          url = 'www.daum.net';
+          break;
+        case '네이버':
+          url = 'www.naver.com';
+          break;
+        default:
+          alert('보기중에 없는 사이트입니다');
+      }
+      if (url) location.href = `http://${url}`;
+      */
+
+      /*반복문
+      //while문
+      let n = 10;
+      while (n > 0) {
+        document.write(n-- + '<br>');
+      }
+     
+
+      let n = 20;
+      while (n >= 10) {
+        if (n % 2 == 0) {
+          document.write(`<p class='blue'>${n}</p>`);
+        } else {
+          document.write(`<p class='red'>${n}</p>`);
+        }
+        n--;
+      }
+    
+
+      //do while문
+      let sum = 0;
+      do {
+        let n = Number(prompt('누적해서 더할 값을 입력:'));
+        sum += n;
+      } while (n);
+      {
+        document.write(sum);
+      }
+
+
+      //for문
+        for (var i = 1, j = 0; i <= 10; i++, j += 2) {
+          document.write(i + ' ' + j + '<br>');
+        }
+        
+      //for문에서 continue
+      let cnt = 0;
+      for (;;) {
+        cnt++;
+        if (cnt == 5) {
+          continue;
+        }
+        if (cnt > 10) {
+          break;
+        }
+
+        document.write(cnt);
+      }
+   
+
+        for (let i = 1; i < 10; i++) {
+          if (i % 2 == 0) continue;
+          document.write(i);
+        }
+
+      //구구단
+      for (let i = 2; i < 10; i++) {
+        for (let j = 1; j < 10; j++) {
+          document.write(`${i} x ${j} = ${i * j} <br>`);
+        }
+      }
+       */
+    </script>
+  </body>
+</html>
