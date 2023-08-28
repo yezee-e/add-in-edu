@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let today = new Date();
+      //   let nowMonth = today.getMonth() + 1,
+      //     nowDate = today.getDate(),
+      //     nowDay = today.getDay();
+
+      //   document.write('<h1></h1>');
+      //   document.write(`현재 월:${nowMonth} <br>`);
+      //   document.write(`현재 일:${nowDate}<br>`);
+      //   document.write(`현재 요일:${nowDay}<br>`);
+
+      //   let worldCup = new Date(2022, 4, 31);
+      //   let theMonth = worldCup.getMonth();
+
+      //for문에 in
+      let arr3 = [123, 'hi', true, 3, 'hello'];
+      for (let i in arr3) {
+        document.write(`${arr3[i]},i:${i},<br>`);
+      }
+
+      let arr1 = ['사당', '교대', '방배', '강남'];
+      let arr2 = ['신사', '압구정', '옥수'];
+      let arr4 = ['apple', 'banana', 'pizza'];
+      let arr5 = ['apple', 'banana', 'pizza'];
+
+      let result = arr1.join('-');
+      let result2 = arr1.concat(arr2);
+      let result3 = arr4.slice(1, 2);
+      let result4 = arr5.splice(1, 2);
+
+      console.log(typeof result, result);
+      console.log(typeof result2, result2);
+      console.log(typeof result3, result3);
+      console.log(typeof result4, result4);
+    </script>
+  </body>
+</html>
