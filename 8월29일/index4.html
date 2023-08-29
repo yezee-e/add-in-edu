@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //구구단을 7단의 7번째 샘에서 멈추는 방법
+      //function의 return을 활용해서 for문을 멈추게 한다
+      function gugudan() {
+        for (var i = 2; i < 10; i++) {
+          for (var j = 1; j < 10; j++) {
+            document.write(`${i}x${j}=${i * j}, <br>`);
+            if (i == 7 && j == 7) {
+              return;
+            }
+          }
+        }
+      }
+      gugudan();
+    </script>
+  </body>
+</html>
