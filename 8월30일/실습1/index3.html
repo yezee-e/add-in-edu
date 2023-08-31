@@ -16,13 +16,66 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style3.css" />
-    <title>Document</title>
+    <title>실습1</title>
   </head>
   <body>
-    <button type="button" class="btn btn-primary">
-      부트스트랩 오랜만이네영
-    </button>
+    <div class="container">
+      <div class="input-area">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">학생이름</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            id="input1"
+            required
+          />
+        </div>
 
-    <script src="main3.js"></script>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">국어점수</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="KorScore"
+            aria-label="KorScore"
+            aria-describedby="basic-addon1"
+            id="input2"
+            required
+          />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">영어점수</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="EngScore"
+            aria-label="EngScore"
+            aria-describedby="basic-addon1"
+            id="input3"
+            required
+          />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">수학점수</span>
+          <input
+            type="text "
+            class="form-control"
+            placeholder="MathScore"
+            aria-label="MathScore"
+            aria-describedby="basic-addon1"
+            id="input4"
+            required
+          />
+        </div>
+        <div class="input-group mb-3">
+          <button onclick="handleBtn()" class="btn btn-primary">추가</button>
+        </div>
+      </div>
+
+      <script src="main3.js"></script>
+    </div>
   </body>
 </html>
