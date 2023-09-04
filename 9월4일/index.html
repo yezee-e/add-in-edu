@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr3 = [11, 22, 33];
+      let arr4 = Object.assign([], arr3);
+      arr4[0] = 111;
+      console.log(arr3, arr4); //[111,22,33] ,[111,22,33]
+      console.log(arr3 === arr4); //false
+
+      let arr5 = [
+        [11, 22, 33],
+        [44, 55],
+      ];
+      let arr6 = Object.assign([], arr5);
+      console.log(arr5, arr6);
+      arr6[0][0] = 1;
+      console.log(arr5[0] === arr6[0]); //true
+
+      let arr9 = [
+        [100, 200, [300]],
+        [400, 500, [600, 700]],
+      ];
+      console.log(JSON.stringify(arr9));
+      console.log(JSON.parse(JSON.stringify(arr9)));
+
+      //결론 Object.assign은 깊은 복사가 이루어지지 않는다!
+    </script>
+  </body>
+</html>
